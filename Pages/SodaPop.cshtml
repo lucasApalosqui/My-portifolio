@@ -1,0 +1,13 @@
+﻿@page
+@model Portifolio.Pages.SodaPopModel
+@{
+    Layout = "Shared/_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+    <body>
+    @Html.RenderPartialAsync("Shared/ProjectsPartial").AsyncState
+    
+    </body>
+ </html>

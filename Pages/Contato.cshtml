@@ -1,0 +1,115 @@
+﻿@page
+@model Portifolio.Pages.ContatoModel
+@{
+    Layout = "Shared/_Layout";
+}
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="~/css/Contato.css" />
+<body>
+    <header>
+        @Html.RenderPartialAsync("Shared/NavMenuPartial").AsyncState
+    </header>
+
+
+    <div class="container mt-5 contact-all">
+        <h1 class="title-contact">Meios de Contato</h1>
+        <div class="row row-contact">
+            <div class="card  col">
+
+                <div class="d-flex align-items-center">
+
+                    <div class="image">
+                        <img src="https://i.imgur.com/l2r6L6F.png" class=" img-contact" width="155">
+                    </div>
+
+                    <div class="ml-3 w-100 side-contact-bar">
+
+                        <h4 class="mb-0 mt-0">GitHub</h4>
+                        <span>github.com/lucasApalosqui</span>
+
+                        <div class="button mt-2 d-flex flex-row align-items-center">
+
+                            <a href="https://github.com/lucasApalosqui" target=”_blank” class="btn btn-sm w-100 btn-contato">Acessar</a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="card col">
+
+                <div class="d-flex align-items-center">
+
+                    <div class="image">
+                        <img src="https://i.imgur.com/TXwFlz4.jpg" class=" img-contact" width="155">
+                    </div>
+
+                    <div class="ml-3 w-100 side-contact-bar">
+
+                        <h4 class="mb-0 mt-0">Linkedin</h4>
+                        <span>www.linkedin.com/in/lucasapalosqui/</span>
+
+                        <div class="button mt-2 d-flex flex-row align-items-center">
+
+                            <a href="https://www.linkedin.com/in/lucasapalosqui/" target=”_blank” class="btn btn-sm w-100 btn-contato">Acessar</a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row row-contact">
+            <div class="col-3"></div>
+            <div class="card col gmail-card">
+
+                <div class="d-flex align-items-center">
+
+                    <div class="image">
+                        <img src="https://i.imgur.com/9G6qBqF.png" target=”_blank” class=" img-contact" width="155">
+                    </div>
+
+                    <div class="ml-3 w-100 side-contact-bar">
+
+                        <h4 class="mb-0 mt-0">E-mail</h4>
+                        <span>lucas.apalosqui@gmail.com</span>
+
+                        <div class="button mt-2 d-flex flex-row align-items-center">
+
+                            <a href="mailto:lucas.apalosqui@gmail.com" class="btn btn-sm w-100 btn-contato">Acessar</a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="col-3"></div>
+
+        </div>
+
+    </div>
+
+
+
+
+    @Html.RenderPartialAsync("Shared/FooterPartial").AsyncState
+</body>
+</html>

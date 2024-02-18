@@ -1,0 +1,42 @@
+﻿<link rel="stylesheet" href="~/css/ProjectsPartial.css" />
+<!DOCTYPE html>
+<html>
+    <body>
+    @Html.RenderPartialAsync("Shared/NavMenuPartial").AsyncState
+    <div class="container container-projects">
+        <div class="row">
+            <div class="col-7">
+                <h1 class="title-projects">Nome do Projeto: @Model.Project.Name</h1>
+                <h2 class="tools-projects">Ferramentas Utilizadas: 
+                    @foreach (var tool in Model.AllTools)
+                    {
+                        @tool.Name <g>| </g>
+                    }
+                </h2>
+                <h2 class="tools-projects">
+                    Link do Repositório: <a href="@Model.Project.LinkRepository" target="_blank">Ir Para o GitHub</a>
+                </h2>
+                <br />
+                <h2 class="text-center tools-projects">
+                    Descrição do Projeto:
+                </h2>
+                <h2 class="text-center tools-projects projects-description">
+                    @Model.Project.Description
+                </h2>
+            </div>
+            <div class="col-5">
+                <img src="@Model.ImageMain.Url" class="img-thumbnail" alt="@Model.ImageMain.Name">
+            </div>
+        </div>
+        <br />
+        <h2 class="text-center text-galery">Galeria de Imagens</h2>
+        <div class="galery-images container-fluid row">
+        @foreach (var img in Model.AllImages)
+        {
+            <img src="@img.Url" class="img-thumbnail img-project col-4" alt="@img.Name">
+        }
+        </div>
+    </div>
+    @Html.RenderPartialAsync("Shared/FooterPartial").AsyncState
+    </body>
+</html>

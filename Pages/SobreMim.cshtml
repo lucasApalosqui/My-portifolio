@@ -1,0 +1,77 @@
+﻿@page
+@model Portifolio.Pages.SobreMimModel
+@{
+    Layout = "Shared/_Layout";
+}
+
+<link rel="stylesheet" href="~/css/SobreMim.css" />
+<!DOCTYPE html>
+<html>
+    <body>
+    @Html.RenderPartialAsync("Shared/NavMenuPartial").AsyncState
+   
+    <div class="container row containe-about">
+
+        <div class="col-4"></div>
+        <img src="https://i.imgur.com/BInhC3r.png" class="col-4 img-principal-about"/>
+        <div class="col-4"></div>   
+    </div>
+    <h1 class="h1-about text-center">Sobre Mim</h1>
+    <div class="text-center row">
+        <div class="col-1"></div>
+        <h3 class="about-text col-10">Prazer! Me chamo Lucas Apalosqui, tenho 22 anos de idade e resido na grande São paulo. Foi em 2021 que me apaixonei pelo vasto mundo da programação, iniciando meus estudos através de um curso profissionalizante disponibilizado pelo <a href="https://www.proa.org.br/proprofissao/" target="_blank">Proa</a>. logo após minha conclusão engatei um outro curso profissionalizante focado em Java da <a href="https://brazil.generation.org/" target="_blank">Generation Brasil</a>, e foi nesse momento que me encantei com o POO que adicionado a um empurrãozinho de uma querida amiga, acabei conhecendo o C# / .NET. Foi amor à primeira vista, não perdi tempo e fui em busca de mais e mais conhecimento sobre minha mais nova paixão, fiz cursos na <a href="https://www.udemy.com/pt/" target="_blank">Udemy</a> e <a href="https://www.alura.com.br/" target="_blank">Alura</a>, consolidei conhecimentos básicos, mas queria me aprimorar mais, então comecei o curso focado em back-end do <a target="_blank" href="https://balta.io/carreiras/desenvolvedor-backend-dotnet">Balta.io</a>. Hoje já posso dizer que tenho conhecimento consolidado e muita familiaridade com a linguagem e sua vasta gama de possibilidades.</h3>
+        <div class="col-1"></div>
+    </div>
+    <hr />
+    <h2 class="h1-about text-center">Conhecimentos</h2>
+    <div class="container knowlead-all">
+        <div class="knowlead-unique row">
+            <img src="https://i.imgur.com/fshRk33.png" alt="CSharp" class="icons-know col-4"/>
+            <h3 class="text-icons col-6">CSharp</h3>
+        </div>
+        <div class="knowlead-unique row">
+            <img src="https://i.imgur.com/RxZRf7u.png" alt="ASP.NET" class="icons-know col-4" />
+            <h3 class="text-icons col-6">ASP.NET</h3>
+        </div>
+        <div class="knowlead-unique row">
+            <img src="https://i.imgur.com/97BR1DV.png" alt="MVC" class="icons-know col-4" />
+            <h3 class="text-icons col-6">MVC</h3>
+        </div>
+        <div class="knowlead-unique row">
+            <img src="https://i.imgur.com/8rv4a4l.png" alt="Entity Framework Core" class="icons-know col-4" />
+            <h3 class="text-icons col-6">Entity Framework Core</h3>
+        </div>
+        <div class="knowlead-unique row">
+            <img src="https://i.imgur.com/PKRu3bF.png" alt="SqlServer" class="icons-know col-4" />
+            <h3 class="text-icons col-6">SqlServer</h3>
+        </div>
+        <div class="knowlead-unique row">
+            <img src="https://i.imgur.com/46Vm3ho.png" alt="Azure Devops" class="icons-know col-4" />
+            <h3 class="text-icons col-6">Azure Devops</h3>
+        </div>
+        <div class="knowlead-unique row">
+            <img src="https://i.imgur.com/KvH5Nux.png" alt="Dapper" class="icons-know col-4" />
+            <h3 class="text-icons col-6">Dapper</h3>
+        </div>
+        <div class="knowlead-unique row">
+            <img src="https://i.imgur.com/Z3KHzkL.png" alt="GitHub" class="icons-know col-4" />
+            <h3 class="text-icons col-6">GitHub</h3>
+        </div>
+        <div class="knowlead-unique row">
+            <img src="https://i.imgur.com/BckeARj.png" alt="Git" class="icons-know col-4" />
+            <h3 class="text-icons col-6">Git</h3>
+        </div>
+        <div class="knowlead-unique row">
+            <img src="https://i.imgur.com/35gbdCS.png" alt="Api Restful" class="icons-know col-4" />
+            <h3 class="text-icons col-6">Api Restful</h3>
+        </div>
+    </div>
+    
+
+    
+
+
+
+    @Html.RenderPartialAsync("Shared/FooterPartial").AsyncState
+    </body>
+</html>

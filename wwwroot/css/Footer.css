@@ -1,0 +1,23 @@
+﻿.footer-all {
+    background-color: #18151F;
+    margin-top: 100px;
+}
+
+.text-footer {
+    color: #BEBDC2;
+    font-size: 14px;
+}
+
+.text-footer:hover {
+    color: white;
+
+}
+
+.footer{
+    padding-bottom: 30px;
+}
+
+.footer-bot {
+    background-color: #F8F9FA;
+    color: #110F16;
+}

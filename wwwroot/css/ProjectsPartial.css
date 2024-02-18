@@ -1,0 +1,41 @@
+﻿.container-projects{
+    margin-top: 180px;
+}
+
+.title-projects {
+    color: #F8F9FA;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.tools-projects {
+    color: #F8F9FA;
+    font-size: 21px;
+}
+
+.projects-description{
+    margin-right: 15px;
+}
+
+.img-project{
+    margin-right: 100px;
+    margin-bottom: 100px;
+    border: 2px solid white;
+    padding: 0;
+}
+
+.text-galery {
+    color: white;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    font-size: 35px;
+}
+
+.galery-images {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+

@@ -1,0 +1,42 @@
+﻿.containe-about{
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.img-principal-about{
+    border-radius: 50%;
+    margin-top: 15px;
+
+
+}
+
+.icons-know{
+    width: 80px;
+}
+
+.knowlead-all{
+    
+}
+
+.text-icons{
+    color: white;
+    font-size: 20px;
+}
+
+.knowlead-unique {
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.h1-about {
+    color: white;
+    padding-top: 20px;
+}
+
+.about-text{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+}
